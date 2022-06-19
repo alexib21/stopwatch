@@ -25,6 +25,7 @@
 .stopwatch-timer-label {
     margin-top: 5px;
     word-spacing: 5px;
+    
 }
 
 .stopwatch-btn-container {
@@ -37,6 +38,7 @@
     border: 1px solid transparent;
     padding:  5px 20px;
     border-radius: 5px;
+    word-spacing: 5px;
 }
 
 .stopwatch-btn-Start {
@@ -62,12 +64,12 @@
 }
 
 .stopwatch-btn-Reset {
-    border: yellow;
-    color: yellow;
+    border: rgba(20, 20, 5);
+    color: rgba(20, 20, 5);;
     background-color: transparent;
 }
 
 .stopwatch-btn-Reset:hover {
-    background-color: yellow;
+    background-color: rgb(20, 20, 5);
     color: #ddd;
 }
