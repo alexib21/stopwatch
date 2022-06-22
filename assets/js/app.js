@@ -37,7 +37,13 @@ function runStopWatch() {
     stopwatchStopBtn.addEventListener("click" , stopStopWatch)
 
     const resetStopWatch = () => {
+
+        stopwatchMilli = 0
+        stopwatchSeconds = 0
+        stopwatchMintues = 0
+
         stopwatchtimer.innerHTML = '00:00:00'
+        clearInterval(interval)
     }
     stopwatchResetBtn.addEventListener("click", resetStopWatch)
     
