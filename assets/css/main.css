@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 
 }
 
-.stopwatch-container {
+.stopwatch-container, .timer-container  {
     background-color: #ddd;
     padding: 20px;
     border-radius: 10px;
@@ -13,13 +22,15 @@
 
 .stopwatch-display {
     text-align: center;
+
 }
 
 .stopwatch-timer {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 25px;
-    font-weight: bold; 
+    font-weight: bold;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
 }
 
 .stopwatch-timer-label {
@@ -28,12 +39,13 @@
     
 }
 
-.stopwatch-btn-container {
+.stopwatch-btn-container, .timer-btn-container  {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-.stopwatch-btn {
+.stopwatch-btn, .timer-btn{
     outline: none;
     border: 1px solid transparent;
     padding:  5px 20px;
@@ -41,24 +53,24 @@
     word-spacing: 5px;
 }
 
-.stopwatch-btn-Start {
+.stopwatch-btn-Start, .timer-btn-start{
     border-color: green;
     color: green;
     background-color: transparent;
 }
 
-.stopwatch-btn-Start:hover {
+.stopwatch-btn-Start:hover, .timer-btn-start:hover{
     background-color: green;
     color: #ddd;
 }
 
-.stopwatch-btn-Stop {
+.stopwatch-btn-Stop , .timer-btn-stop{
     border-color: red;
     color: red;
     background-color: transparent;
 }
 
-.stopwatch-btn-Stop:hover {
+.stopwatch-btn-Stop:hover, .timer-btn-stop:hover{
     background-color: red;
     color: #ddd;
 }
@@ -72,4 +84,26 @@
 .stopwatch-btn-Reset:hover {
     background-color: rgb(20, 20, 5);
     color: #ddd;
+}
+
+.timer-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timer-input {
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.timer-display-container {
+    margin: 20px 0;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    font-weight: bold; 
 }
